@@ -26,7 +26,7 @@ function validateLastName() {
 function validatePassword() {
   if (checkIfEmpty(password)) return
   if (!meetLength(password, 6, 25)) return
-  
+
   return true
 }
 
@@ -66,5 +66,12 @@ function checkIfOnlyLetters(field) {
   } else {
     setInvalid(field, `${field.name} must contain only letters`)
     return false
+  }
+}
+
+function meetLength(field, minLength, maxLength) {
+  if (field.value.length >= minLength && field.value.length <= maxLength) {
+    setValid(field)
+    return true
   }
 }
