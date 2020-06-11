@@ -20,3 +20,8 @@ function checkIfEmpty(field) {
     return false
   }
 }
+
+function isEmpty(value) {
+  if (value === '') return true
+  return false
+}
