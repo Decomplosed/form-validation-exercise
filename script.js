@@ -5,3 +5,6 @@ const confirmPassword = document.getElementById('confirmPassword')
 const email = document.getElementById('email')
 
 const form = document.getElementById('myForm')
+
+const green = '#4CAF50'
+const red = '#F44336'
