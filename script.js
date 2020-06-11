@@ -73,5 +73,14 @@ function meetLength(field, minLength, maxLength) {
   if (field.value.length >= minLength && field.value.length <= maxLength) {
     setValid(field)
     return true
+  } else if (field.value.length < minLength) {
+    setInvalid(
+      field,
+      `${field.name} must be at least ${minLength} characters long`
+    )
+    return false
+  } else {
+    setInvalid(field, `${field.name} must shorter than ${maxLength} characters`)
+    return false
   }
 }
