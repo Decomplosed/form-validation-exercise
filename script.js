@@ -9,6 +9,14 @@ const form = document.getElementById('myForm')
 const green = '#4CAF50'
 const red = '#F44336'
 
-function validateFirstName(){
-  if(checkIfEmpty(firstName)) return
+function validateFirstName() {
+  if (checkIfEmpty(firstName)) return
+}
+
+function checkIfEmpty(field) {
+  if (isEmpty(field.value.trim())) {
+    return true
+  } else {
+    return false
+  }
 }
