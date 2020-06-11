@@ -27,3 +27,9 @@ function isEmpty(value) {
   if (value === '') return true
   return false
 }
+
+function setInvalid(field, message) {
+  field.className = 'invalid'
+  field.nextElementSibling.innerHTML = message
+  field.nextElementSibling.style.color = red
+}
