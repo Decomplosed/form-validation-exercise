@@ -11,6 +11,8 @@ const red = '#F44336'
 
 function validateFirstName() {
   if (checkIfEmpty(firstName)) return
+  if (!checkIfOnlyLetters(firstName)) return
+  return true
 }
 
 function checkIfEmpty(field) {
