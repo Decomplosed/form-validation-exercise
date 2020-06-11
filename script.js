@@ -8,3 +8,7 @@ const form = document.getElementById('myForm')
 
 const green = '#4CAF50'
 const red = '#F44336'
+
+function validateFirstName(){
+  if(checkIfEmpty(firstName)) return
+}
