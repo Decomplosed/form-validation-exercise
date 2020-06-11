@@ -41,3 +41,10 @@ function setValid() {
   field.nextElementSibling.innerHTML = ''
   // field.nextElementSibling.style.color = green
 }
+
+function checkIfOnlyLetters(field){
+  if(/^[a-zA-Z ]+$/.test(field.value)){
+    setValid(field)
+    return true
+  }
+}
