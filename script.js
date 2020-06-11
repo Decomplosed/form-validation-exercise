@@ -24,7 +24,10 @@ function validateLastName() {
 }
 
 function validatePassword() {
+  if (checkIfEmpty(password)) return
+  if (!meetLength(password, 6, 25)) return
   
+  return true
 }
 
 // Utility functions
