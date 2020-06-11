@@ -9,6 +9,8 @@ const form = document.getElementById('myForm')
 const green = '#4CAF50'
 const red = '#F44336'
 
+// Validators
+
 function validateFirstName() {
   if (checkIfEmpty(firstName)) return
   if (!checkIfOnlyLetters(firstName)) return
@@ -20,6 +22,12 @@ function validateLastName() {
   if (!checkIfOnlyLetters(lastName)) return
   return true
 }
+
+function validatePassword() {
+  
+}
+
+// Utility functions
 
 function checkIfEmpty(field) {
   if (isEmpty(field.value.trim())) {
