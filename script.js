@@ -15,6 +15,12 @@ function validateFirstName() {
   return true
 }
 
+function validateLastName() {
+  if (checkIfEmpty(lastName)) return
+  if (!checkIfOnlyLetters(lastName)) return
+  return true
+}
+
 function checkIfEmpty(field) {
   if (isEmpty(field.value.trim())) {
     setInvalid(field, `${field.name} must not be empty`)
