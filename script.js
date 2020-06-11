@@ -15,6 +15,7 @@ function validateFirstName() {
 
 function checkIfEmpty(field) {
   if (isEmpty(field.value.trim())) {
+    setInvalid(field, `${field.name} must not be empty`)
     return true
   } else {
     return false
