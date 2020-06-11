@@ -18,6 +18,7 @@ function checkIfEmpty(field) {
     setInvalid(field, `${field.name} must not be empty`)
     return true
   } else {
+    setValid(field)
     return false
   }
 }
