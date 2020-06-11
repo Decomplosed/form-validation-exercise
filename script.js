@@ -33,3 +33,9 @@ function setInvalid(field, message) {
   field.nextElementSibling.innerHTML = message
   field.nextElementSibling.style.color = red
 }
+
+function setValid() {
+  field.className = 'valid'
+  field.nextElementSibling.innerHTML = ''
+  field.nextElementSibling.style.color = green
+}
