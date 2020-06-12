@@ -32,6 +32,8 @@ function validatePassword() {
   return true
 }
 
+function validateConfirmPassword() {}
+
 // Utility functions
 
 function checkIfEmpty(field) {
