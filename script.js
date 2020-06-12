@@ -27,6 +27,8 @@ function validatePassword() {
   if (checkIfEmpty(password)) return
   if (!meetLength(password, 6, 25)) return
 
+  if (!containsCharacters(password, 1)) return
+
   return true
 }
 
