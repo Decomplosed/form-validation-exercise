@@ -39,6 +39,8 @@ function validateConfirmPassword() {
   }
   if (password.value !== confirmPassword.value) {
     setInvalid(confirmPassword, 'Passwords must match')
+  } else {
+    setValid(confirmPassword)
   }
 }
 
