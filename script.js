@@ -88,4 +88,10 @@ function meetLength(field, minLength, maxLength) {
 }
 
 function containsCharacters(field, code) {
+  let regEx
+
+  switch (code) {
+    default:
+      return false
+  }
 }
