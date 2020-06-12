@@ -42,6 +42,7 @@ function validateConfirmPassword() {
   } else {
     setValid(confirmPassword)
   }
+  return true
 }
 
 // Utility functions
