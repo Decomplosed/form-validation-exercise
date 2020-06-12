@@ -86,3 +86,6 @@ function meetLength(field, minLength, maxLength) {
     return false
   }
 }
+
+function containsCharacters(field, code) {
+}
