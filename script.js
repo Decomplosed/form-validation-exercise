@@ -94,6 +94,9 @@ function containsCharacters(field, code) {
     case 1:
       regExp = /(?=.*[a-zA-Z])/
       return matchWithRegEx(regEx, field, 'Must contain at least one letter')
+    case 2:
+      regEx = /(?=.*\d)(?=.*[a-zA-Z])/
+      return matchWithRegEx(regEx, field, 'Must contain at least one number')
     default:
       return false
   }
