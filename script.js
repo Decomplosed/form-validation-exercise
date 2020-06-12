@@ -32,7 +32,12 @@ function validatePassword() {
   return true
 }
 
-function validateConfirmPassword() {}
+function validateConfirmPassword() {
+  if (password.className !== 'valid') {
+    setInvalid(confirmPassword, 'Password must be valid')
+    return
+  }
+}
 
 // Utility functions
 
