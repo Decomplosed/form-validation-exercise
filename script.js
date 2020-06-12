@@ -104,6 +104,13 @@ function containsCharacters(field, code) {
         field,
         'Must contain at least one uppercase, one lowercase and one number'
       )
+    case 4:
+      regEx = regEx = /(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*\W)/
+      return matchWithRegEx(
+        regEx,
+        field,
+        'Must contain at least one uppercase letter, one lowercase letter, one number and one special character (symbol)'
+      )
     default:
       return false
   }
