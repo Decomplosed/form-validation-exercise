@@ -47,6 +47,8 @@ function validateConfirmPassword() {
 
 function validateEmail() {
   if (checkIfEmpty(email)) return
+  if (!containsCharacters(email, 5)) return
+  return true
 }
 
 // Utility functions
