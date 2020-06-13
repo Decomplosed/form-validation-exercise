@@ -130,6 +130,8 @@ function containsCharacters(field, code) {
         field,
         'Must contain at least one uppercase letter, one lowercase letter, one number and one special character (symbol)'
       )
+    case 5:
+      regEx = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
     default:
       return false
   }
