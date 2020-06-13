@@ -45,6 +45,8 @@ function validateConfirmPassword() {
   return true
 }
 
+function validateEmail() {}
+
 // Utility functions
 
 function checkIfEmpty(field) {
