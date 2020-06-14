@@ -30,7 +30,9 @@ form.addEventListener('submit', function (e) {
     loader.appendChild(loadingBar)
     container.appendChild(loader)
 
-    setTimeout(function () {}, 1000)
+    setTimeout(function () {
+      const loaderDiv = document.querySelector('div.progress')
+    }, 1000)
   }
 })
 
