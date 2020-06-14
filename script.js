@@ -21,6 +21,7 @@ form.addEventListener('submit', function (e) {
     validateConfirmPassword() &&
     validateEmail()
   ) {
+    const name = firstName.value
   }
 })
 
