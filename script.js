@@ -29,6 +29,8 @@ form.addEventListener('submit', function (e) {
     loadingBar.className = 'indeterminate'
     loader.appendChild(loadingBar)
     container.appendChild(loader)
+
+    setTimeout(function () {}, 1000)
   }
 })
 
