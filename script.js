@@ -34,6 +34,7 @@ form.addEventListener('submit', function (e) {
       const loaderDiv = document.querySelector('div.progress')
       const panel = document.createElement('div')
       panel.className = 'card-panel green'
+      const text = document.createElement('span')
     }, 1000)
   }
 })
