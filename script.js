@@ -32,6 +32,7 @@ form.addEventListener('submit', function (e) {
 
     setTimeout(function () {
       const loaderDiv = document.querySelector('div.progress')
+      const panel = document.createElement('div')
     }, 1000)
   }
 })
