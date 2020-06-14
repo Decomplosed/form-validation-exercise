@@ -37,6 +37,7 @@ form.addEventListener('submit', function (e) {
       const text = document.createElement('span')
       text.appendChild(document.createTextNode(`Sign up successful ${name}!`))
       panel.appendChild(text)
+      container.replaceChild(panel, loaderDiv)
     }, 1000)
   }
 })
