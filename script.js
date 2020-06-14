@@ -33,6 +33,7 @@ form.addEventListener('submit', function (e) {
     setTimeout(function () {
       const loaderDiv = document.querySelector('div.progress')
       const panel = document.createElement('div')
+      panel.className = 'card-panel green'
     }, 1000)
   }
 })
