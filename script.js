@@ -9,6 +9,21 @@ const form = document.getElementById('myForm')
 const green = '#4CAF50'
 const red = '#F44336'
 
+// Handle form
+
+form.addEventListener('submit', function (e) {
+  e.preventDefault()
+
+  if (
+    validateFirstName() &&
+    validateLastName() &&
+    validatePassword() &&
+    validateConfirmPassword() &&
+    validateEmail()
+  ) {
+  }
+})
+
 // Validators
 
 function validateFirstName() {
