@@ -35,6 +35,7 @@ form.addEventListener('submit', function (e) {
       const panel = document.createElement('div')
       panel.className = 'card-panel green'
       const text = document.createElement('span')
+      text.className = 'white-text'
       text.appendChild(document.createTextNode(`Sign up successful ${name}!`))
       panel.appendChild(text)
       container.replaceChild(panel, loaderDiv)
