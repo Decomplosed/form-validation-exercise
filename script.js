@@ -23,6 +23,7 @@ form.addEventListener('submit', function (e) {
   ) {
     const name = firstName.value
     const container = document.querySelector('div.container')
+    const loader = document.createElement('div')
   }
 })
 
