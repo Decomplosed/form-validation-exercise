@@ -22,6 +22,7 @@ form.addEventListener('submit', function (e) {
     validateEmail()
   ) {
     const name = firstName.value
+    const container = document.querySelector('div.container')
   }
 })
 
