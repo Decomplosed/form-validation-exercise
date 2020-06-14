@@ -28,6 +28,7 @@ form.addEventListener('submit', function (e) {
     const loadingBar = document.createElement('div')
     loadingBar.className = 'indeterminate'
     loader.appendChild(loadingBar)
+    container.appendChild(loader)
   }
 })
 
