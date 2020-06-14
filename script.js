@@ -26,6 +26,7 @@ form.addEventListener('submit', function (e) {
     const loader = document.createElement('div')
     loader.className = 'progress'
     const loadingBar = document.createElement('div')
+    loadingBar.className = 'indeterminate'
   }
 })
 
